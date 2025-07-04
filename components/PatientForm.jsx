@@ -28,7 +28,7 @@ export default function PatientForm() {
         setError('');
         setMessage('');
         try {
-            const res = await axios.post('http://patient-crud-api.onrender.com/api/patients', formData, {
+            const res = await axios.post('https://patient-crud-api.onrender.com/api/patients', formData, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY5NzY0NjhiNzBiNjA3MGI5YmE2OSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1MTY1NzcxNiwiZXhwIjoxNzUxNjYxMzE2fQ.zJDiVqV07_zTd7KDFRGDhCbtdr7F_jVT-iZ9Bnkk2WY',
